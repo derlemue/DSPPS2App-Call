@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- ---------------------------------------------- -->
+<!-- | DSPPS2App-Call | email_text.html       | RC2 | -->
+<!-- ---------------------------------------------- -->
+<!-- | by T. Ledermüller (derlemue.com)           | -->
+<!-- | Lisence: GNU GPL-3.0                       | -->
+<!-- | HTML template for send_email.gs            | -->
+<!-- ---------------------------------------------- -->
+<html>
+	<head>
+    		<base target="_top">
+  	</head>
+  	<body>
+		<p><b>Infomail der Rufbereitschaft DSP PS2</b></p>
+    		<p>Am <b><?= vDate ?></b> wurde der <b>Rufbereitschaft DSP PS2</b> eine Störung an der <b>Teilanlage <?= vTAno ?></b> gemeldet.<br> Die Meldungsbearbeitung durch <b><?= vReporter ?></b> erfolgte von <b><?= vTime1 ?> Uhr</b> bis <b><?= vTime2 ?> Uhr</b>.</p>
+            	<p><b><u>Weitere Informationen zum Einsatz:</u></b></p>
+                  <table>
+            		<tr><td><b>Einsatzart: </b></td><td><?= vCase?> </td></tr>
+                    <tr><td><b>Einsatzdauer: </b></td><td><?= vDuration?> </td></tr>
+            		<tr><td><b>Betroffene Teilanlage: </b></td><td><?= vTAno ?> </td></tr>
+            		<tr><td><b>Störung: </b></td><td><?= vError ?> </td></tr>
+                    <tr><td><b>Ursache: </b></td><td><?= vCause ?> </td></tr> 
+                    <tr><td><b>Maßnahme: </b></td><td><?= vAction ?> </td></tr>
+                    <tr><td><b>weitere beteiligte Bereitschaft: </b></td><td><?= vOtherService ?> </td></tr>
+                    <tr><td><b>Bemerkungen: </b></td><td><?= vComment ?> </td></tr>
+                  </table>
+    		<p>Mit freundlichen Grüßen, <br><br><b>Bereitschaft DSP PS2</b><br><?= vReporter ?></p>
+	</body>
+</html>
