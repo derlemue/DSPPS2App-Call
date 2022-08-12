@@ -48,16 +48,11 @@
 		var vTime1 = new Date(ws_input.getSheetValues(lastRow, 5, 1, 1));
 		var vTime2 = new Date(ws_input.getSheetValues(lastRow, 6, 1, 1));
 		var vTAno = 6;
-///		var vMedium = 7;
-///		var vMachine = 8;
 		var vError = 7;
 		var vCause = 8;
 		var vAction = 9;
-///		var vInterrup = 12;
 		var vOtherService = 10;
 		var vLogBook = 11;
-///		var vComment = 12;
-///		var vInfoSpread = 16;
   
 /// set variables (link name and cloumn in Google Sheet "Mail_DSP")
 		var vAddr = 1;
@@ -92,15 +87,10 @@
 				email_draft.vTime1 = Utilities.formatDate(vTime1, "Europe/Berlin", "HH:mm");
 				email_draft.vTime2 = Utilities.formatDate(vTime2, "Europe/Berlin", "HH:mm");
 				email_draft.vTAno = row[vTAno];
-///				email_draft.vMachine = row[vMachine];
-///				email_draft.vMedium = row[vMedium];
 				email_draft.vError = row[vError];
 				email_draft.vCause = row[vCause];
 				email_draft.vAction = row[vAction];
-///				email_draft.vInterrup = row[vInterrup];
 				email_draft.vOtherService = row[vOtherService];
-///				email_draft.vInfoSpread = row[vInfoSpread];
-///       email_draft.vComment = row[vComment];
 				email_draft.vName = vNameTemp
 				email_draft.vDuration = calcTime()
   
